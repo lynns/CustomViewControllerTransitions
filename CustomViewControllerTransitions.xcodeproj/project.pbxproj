@@ -13,6 +13,13 @@
 		BD25C65A1B7CB64D00AAFB0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD25C6591B7CB64D00AAFB0D /* Images.xcassets */; };
 		BD25C65D1B7CB64D00AAFB0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD25C65B1B7CB64D00AAFB0D /* LaunchScreen.xib */; };
 		BD25C6691B7CB64D00AAFB0D /* CustomViewControllerTransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25C6681B7CB64D00AAFB0D /* CustomViewControllerTransitionsTests.swift */; };
+		BD25C6731B7CB6CD00AAFB0D /* CustomModalTransitioning1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25C6721B7CB6CD00AAFB0D /* CustomModalTransitioning1.swift */; };
+		BD25C6751B7CBC2900AAFB0D /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25C6741B7CBC2900AAFB0D /* ModalViewController.swift */; };
+		BD25C6771B7CC3E800AAFB0D /* CustomModalTransitioningFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25C6761B7CC3E800AAFB0D /* CustomModalTransitioningFinal.swift */; };
+		BD25C67A1B7CCBEB00AAFB0D /* CustomModalTransitioning2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25C6791B7CCBEB00AAFB0D /* CustomModalTransitioning2.swift */; };
+		BD25C6811B7CFB4A00AAFB0D /* CustomModalTransitioningOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25C6801B7CFB4A00AAFB0D /* CustomModalTransitioningOther.swift */; };
+		BD25C6841B7CFD7D00AAFB0D /* bj.png in Resources */ = {isa = PBXBuildFile; fileRef = BD25C6821B7CFD7D00AAFB0D /* bj.png */; };
+		BD25C6851B7CFD7D00AAFB0D /* dave.png in Resources */ = {isa = PBXBuildFile; fileRef = BD25C6831B7CFD7D00AAFB0D /* dave.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		BD25C6621B7CB64D00AAFB0D /* CustomViewControllerTransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomViewControllerTransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD25C6671B7CB64D00AAFB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD25C6681B7CB64D00AAFB0D /* CustomViewControllerTransitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewControllerTransitionsTests.swift; sourceTree = "<group>"; };
+		BD25C6721B7CB6CD00AAFB0D /* CustomModalTransitioning1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalTransitioning1.swift; sourceTree = "<group>"; };
+		BD25C6741B7CBC2900AAFB0D /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		BD25C6761B7CC3E800AAFB0D /* CustomModalTransitioningFinal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalTransitioningFinal.swift; sourceTree = "<group>"; };
+		BD25C6791B7CCBEB00AAFB0D /* CustomModalTransitioning2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalTransitioning2.swift; sourceTree = "<group>"; };
+		BD25C6801B7CFB4A00AAFB0D /* CustomModalTransitioningOther.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalTransitioningOther.swift; sourceTree = "<group>"; };
+		BD25C6821B7CFD7D00AAFB0D /* bj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bj.png; sourceTree = "<group>"; };
+		BD25C6831B7CFD7D00AAFB0D /* dave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dave.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +91,15 @@
 		BD25C64F1B7CB64D00AAFB0D /* CustomViewControllerTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				BD25C67B1B7CF7FB00AAFB0D /* assets */,
+				BD25C6781B7CC40600AAFB0D /* Animatora */,
 				BD25C6521B7CB64D00AAFB0D /* AppDelegate.swift */,
 				BD25C6541B7CB64D00AAFB0D /* ViewController.swift */,
 				BD25C6561B7CB64D00AAFB0D /* Main.storyboard */,
 				BD25C6591B7CB64D00AAFB0D /* Images.xcassets */,
 				BD25C65B1B7CB64D00AAFB0D /* LaunchScreen.xib */,
 				BD25C6501B7CB64D00AAFB0D /* Supporting Files */,
+				BD25C6741B7CBC2900AAFB0D /* ModalViewController.swift */,
 			);
 			path = CustomViewControllerTransitions;
 			sourceTree = "<group>";
@@ -110,6 +127,26 @@
 				BD25C6671B7CB64D00AAFB0D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD25C6781B7CC40600AAFB0D /* Animatora */ = {
+			isa = PBXGroup;
+			children = (
+				BD25C6721B7CB6CD00AAFB0D /* CustomModalTransitioning1.swift */,
+				BD25C6791B7CCBEB00AAFB0D /* CustomModalTransitioning2.swift */,
+				BD25C6761B7CC3E800AAFB0D /* CustomModalTransitioningFinal.swift */,
+				BD25C6801B7CFB4A00AAFB0D /* CustomModalTransitioningOther.swift */,
+			);
+			name = Animatora;
+			sourceTree = "<group>";
+		};
+		BD25C67B1B7CF7FB00AAFB0D /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BD25C6821B7CFD7D00AAFB0D /* bj.png */,
+				BD25C6831B7CFD7D00AAFB0D /* dave.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD25C6581B7CB64D00AAFB0D /* Main.storyboard in Resources */,
+				BD25C6851B7CFD7D00AAFB0D /* dave.png in Resources */,
+				BD25C6841B7CFD7D00AAFB0D /* bj.png in Resources */,
 				BD25C65D1B7CB64D00AAFB0D /* LaunchScreen.xib in Resources */,
 				BD25C65A1B7CB64D00AAFB0D /* Images.xcassets in Resources */,
 			);
@@ -212,8 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD25C6811B7CFB4A00AAFB0D /* CustomModalTransitioningOther.swift in Sources */,
+				BD25C6751B7CBC2900AAFB0D /* ModalViewController.swift in Sources */,
 				BD25C6551B7CB64D00AAFB0D /* ViewController.swift in Sources */,
+				BD25C6731B7CB6CD00AAFB0D /* CustomModalTransitioning1.swift in Sources */,
 				BD25C6531B7CB64D00AAFB0D /* AppDelegate.swift in Sources */,
+				BD25C6771B7CC3E800AAFB0D /* CustomModalTransitioningFinal.swift in Sources */,
+				BD25C67A1B7CCBEB00AAFB0D /* CustomModalTransitioning2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
