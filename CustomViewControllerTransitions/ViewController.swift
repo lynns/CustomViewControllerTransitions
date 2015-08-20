@@ -29,12 +29,15 @@ class ViewController: UIViewController {
     }
   }
   
-  func setupCustomPresentation(vc: UIViewController) {
-//    vc.transitioningDelegate = CustomModalTransitioning1()
-//    vc.transitioningDelegate = CustomModalTransitioning2()
-//    vc.transitioningDelegate = CustomModalTransitioningFinal()
-    vc.transitioningDelegate = CustomModalTransitioningOther()
-    vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+  func setupCustomPresentation(toViewController: UIViewController) {
+    toViewController.transitioningDelegate = CustomModalTransitioning1()
+//    toViewController.transitioningDelegate = CustomModalTransitioning2()
+//    toViewController.transitioningDelegate = CustomModalTransitioningFinal()
+//    toViewController.transitioningDelegate = CustomModalTransitioningOther()
+    
+    
+    
+    toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
   }
   
 }

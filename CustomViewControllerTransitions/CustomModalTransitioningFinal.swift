@@ -3,7 +3,6 @@ import UIKit
 class CustomModalTransitioningFinal: NSObject {
   var isPresenting = false
   let animationDuration = 0.3
-  let margin: CGFloat = 52
   let modalWidth: CGFloat = 615
   var presentingVC: UIViewController?
   var topConstraint: NSLayoutConstraint?
@@ -34,11 +33,11 @@ extension CustomModalTransitioningFinal: UIViewControllerAnimatedTransitioning {
   }
   
   
-// START 1 //
+// START 2 //
   func tapped() {
     presentingVC?.dismissViewControllerAnimated(true, completion: nil)
   }
-// END 1 //
+// END 2 //
   
   
   func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -47,10 +46,10 @@ extension CustomModalTransitioningFinal: UIViewControllerAnimatedTransitioning {
     if let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey),
       let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
     {
-      if(isPresenting == true) {
+      if(isPresenting) {
         
         
-      // START 2 //
+      // START 1 //
         self.presentingVC = fromViewController
         
         let tapOffToDismissView = UIView()
@@ -61,7 +60,7 @@ extension CustomModalTransitioningFinal: UIViewControllerAnimatedTransitioning {
         tapOffToDismissView.setTranslatesAutoresizingMaskIntoConstraints(false)
         containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[view]-0-|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: ["view": tapOffToDismissView]))
         containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[view]-0-|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: ["view": tapOffToDismissView]))
-      // END 2 //
+      // END 1 //
         
         
         containerView.addSubview(toViewController.view)
@@ -81,7 +80,7 @@ extension CustomModalTransitioningFinal: UIViewControllerAnimatedTransitioning {
         
         UIView.animateWithDuration(animationDuration, delay: 0, options:UIViewAnimationOptions.CurveEaseOut, animations: { [weak self] () -> Void in
           fromViewController.view.alpha = 0.3;
-          self?.topConstraint?.constant = self!.margin
+          self?.topConstraint?.constant = 52
           containerView.layoutIfNeeded()
           
         }, completion: { (completed) -> Void in

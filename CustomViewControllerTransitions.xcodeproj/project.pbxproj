@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				BD25C67B1B7CF7FB00AAFB0D /* assets */,
-				BD25C6781B7CC40600AAFB0D /* Animatora */,
+				BD25C6781B7CC40600AAFB0D /* Animators */,
 				BD25C6521B7CB64D00AAFB0D /* AppDelegate.swift */,
 				BD25C6541B7CB64D00AAFB0D /* ViewController.swift */,
 				BD25C6561B7CB64D00AAFB0D /* Main.storyboard */,
@@ -129,7 +129,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BD25C6781B7CC40600AAFB0D /* Animatora */ = {
+		BD25C6781B7CC40600AAFB0D /* Animators */ = {
 			isa = PBXGroup;
 			children = (
 				BD25C6721B7CB6CD00AAFB0D /* CustomModalTransitioning1.swift */,
@@ -137,7 +137,7 @@
 				BD25C6761B7CC3E800AAFB0D /* CustomModalTransitioningFinal.swift */,
 				BD25C6801B7CFB4A00AAFB0D /* CustomModalTransitioningOther.swift */,
 			);
-			name = Animatora;
+			name = Animators;
 			sourceTree = "<group>";
 		};
 		BD25C67B1B7CF7FB00AAFB0D /* assets */ = {
@@ -455,6 +455,7 @@
 				BD25C66E1B7CB64D00AAFB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD25C66F1B7CB64D00AAFB0D /* Build configuration list for PBXNativeTarget "CustomViewControllerTransitionsTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +464,7 @@
 				BD25C6711B7CB64D00AAFB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,3 +1,5 @@
+
+
 import UIKit
 
 class CustomModalTransitioning1: NSObject {
@@ -34,14 +36,11 @@ extension CustomModalTransitioning1: UIViewControllerAnimatedTransitioning {
     if let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey),
        let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
     {
-      if(isPresenting == true) {
+      if(isPresenting) {
         containerView.addSubview(toViewController.view)
 
         fromViewController.view.alpha = 1.0;
         toViewController.view.alpha = 0;
-        
-//        toViewController.view.clipsToBounds = true
-//        toViewController.view.layer.cornerRadius = 10
         
         toViewController.view.frame = CGRectMake(50, 50, 668, 668)
         
@@ -52,6 +51,9 @@ extension CustomModalTransitioning1: UIViewControllerAnimatedTransitioning {
         }, completion: { (completed) -> Void in
           transitionContext.completeTransition(completed)
         })
+        
+//        toViewController.view.clipsToBounds = true
+//        toViewController.view.layer.cornerRadius = 10
         
       } else {
         UIView.animateWithDuration(animationDuration, delay: 0, options:UIViewAnimationOptions.CurveEaseOut, animations: { [weak self] () -> Void in

@@ -91,7 +91,7 @@ extension CustomModalTransitioningOther: UIViewControllerAnimatedTransitioning {
     if let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey),
       let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
     {
-      if(isPresenting == true) {
+      if(isPresenting) {
         
         self.presentingVC = fromViewController
         

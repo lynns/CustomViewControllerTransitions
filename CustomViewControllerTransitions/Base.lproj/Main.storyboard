@@ -49,6 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-78" y="496"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="eNM-SF-49B">
@@ -96,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGh-lq-8AN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107" y="486"/>
+            <point key="canvasLocation" x="690" y="496"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

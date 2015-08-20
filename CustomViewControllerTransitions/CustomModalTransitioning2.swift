@@ -3,7 +3,6 @@ import UIKit
 class CustomModalTransitioning2: NSObject {
   var isPresenting = false
   let animationDuration = 0.3
-  let margin: CGFloat = 52
   let modalWidth: CGFloat = 615
   var topConstraint: NSLayoutConstraint?
   
@@ -38,7 +37,7 @@ extension CustomModalTransitioning2: UIViewControllerAnimatedTransitioning {
     if let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey),
        let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
     {
-      if(isPresenting == true) {
+      if(isPresenting) {
         containerView.addSubview(toViewController.view)
         
       // START 1 //
@@ -57,10 +56,10 @@ extension CustomModalTransitioning2: UIViewControllerAnimatedTransitioning {
         fromViewController.view.alpha = 1.0;
         
         UIView.animateWithDuration(animationDuration, delay: 0, options:UIViewAnimationOptions.CurveEaseOut, animations: { [weak self] () -> Void in
-          fromViewController.view.alpha = 0.5;
+          fromViewController.view.alpha = 0.3;
           
         // START 2 //
-          self?.topConstraint?.constant = self!.margin
+          self?.topConstraint?.constant = 52
           containerView.layoutIfNeeded()
         // END 2 //
           
